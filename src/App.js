@@ -5,7 +5,6 @@ import {
   LayersControl,
   LayerGroup,
   Rectangle,
-  Polygon,
   Circle,
 } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
@@ -36,13 +35,6 @@ export default function LeafletMapWithLayersControl() {
         <LayersControl.Overlay name="Rectangle" checked>
           <LayerGroup>
             <Rectangle bounds={rectangleBounds} pathOptions={{ color: "red" }} />
-          </LayerGroup>
-        </LayersControl.Overlay>
-
-      
-        <LayersControl.Overlay name="Polygon" checked>
-          <LayerGroup>
-            <Polygon positions={polygonCoords} pathOptions={{ color: "green" }} />
           </LayerGroup>
         </LayersControl.Overlay>
 
